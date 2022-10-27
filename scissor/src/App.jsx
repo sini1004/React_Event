@@ -1,4 +1,5 @@
 import './App.css';
+import Box from './components/Box'
 
 /**
   1. 박스 2개 (타이틀, 사진, 결과)
@@ -11,9 +12,10 @@ import './App.css';
 
 function App() {
   return (
-    <>
-      test
-    </>
+    <main className='main'>
+      <Box />
+      <Box />
+    </main>
   );
 }
 
