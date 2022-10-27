@@ -10,12 +10,29 @@ import Box from './components/Box'
   6. 결과에 따라 박스 테투리색, 글씨 색이 변함 (승:파랑, 패:회색)
  */
 
+//사진 아이템을 저장할 수 있는 객체
+const Choise = {
+  scissors : {name : 'Scissors', img : 'scissors.png'},
+  rock : {name : 'Rock', img : 'rock.png'},
+  paper : {name : 'Paper', img : 'paper.png'},
+}
+
 function App() {
+  const play = (userChoice) => {
+    console.log('가위바위보 선택', userChoice)
+  }
   return (
-    <main className='main'>
-      <Box />
-      <Box />
-    </main>
+    <>
+      <main className='main'>
+        <Box title='my'/>
+        <Box title='computer'/>
+      </main>
+      <div className='main'>
+        <button onClick={() => play('scissors')}>가위</button>
+        <button onClick={() => play('rock')}>바위</button>
+        <button onClick={() => play('paper')}>보</button>
+      </div>
+    </>
   );
 }
 

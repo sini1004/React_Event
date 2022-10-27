@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Box = () => {
+const Box = (props) => {
   return(
     <div className='box'>
-      <h1>My Choise</h1>
+      <h1>{props.title}</h1>
       <img src="scissors.png" alt="" className='item-img'/>
       <h2>WIN</h2>
     </div>
