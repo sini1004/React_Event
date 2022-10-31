@@ -1,4 +1,4 @@
-//input 각각  onChange 함수를 따로 만듦
+//키보드 이벤트
 //rafce
 import React, {useState} from 'react'
 
